@@ -14,3 +14,7 @@
 	box-shadow: 0 1px;
     padding-bottom: 5px;
 }
+.col-9 .scrollspy-example #list-item-3 {
+	box-shadow: 0 1px;
+    padding-bottom: 5px
+}

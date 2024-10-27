@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.row .col-9 .scrollspy-example {
+    color: #1C2263;
+}
+.col-9 .scrollspy-example #list-item-1 {
+    box-shadow: 0 1px;
+    padding-bottom: 5px;
+    color: #1C2263;
+}
+
+
+.col-9 .scrollspy-example #list-item-2 {
+	box-shadow: 0 1px;
+    padding-bottom: 5px;
+}

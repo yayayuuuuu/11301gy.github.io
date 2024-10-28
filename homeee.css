@@ -9,3 +9,6 @@ body {
 }
 =body {
 }
+body p {
+    text-align: center;
+}

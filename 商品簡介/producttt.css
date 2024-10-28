@@ -8,3 +8,6 @@ body p {
 #list-home .row .col-7 {
     margin-left: 15px;
 }
+.row .col-7 p {
+    margin-left: -1px;
+}

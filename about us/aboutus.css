@@ -23,3 +23,6 @@
     left: 50%;
     text-align: center;
 }
+.row .col-3 #list-example {
+    margin-left: 10px;
+}

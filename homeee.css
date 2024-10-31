@@ -12,3 +12,7 @@ body {
 body p {
     text-align: center;
 }
+.btn.btn-outline-info {
+    margin-left: 46%;
+    color: #1C2263;
+}

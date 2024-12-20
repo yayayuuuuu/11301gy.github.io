@@ -26,3 +26,96 @@
 .row .col-3 #list-example {
     margin-left: 10px;
 }
+
+
+/* 電腦版：螢幕寬度大於 1366px */
+@media (min-width: 1366px) {
+
+
+  h1 {
+    font-size: 36px; /* 設定標題字體大小 */
+  }
+
+  h4 {
+    font-size: 24px; /* 設定價格字體大小 */
+  }
+
+  p {
+    font-size: 18px; /* 設定段落字體大小 */
+  }
+
+  .btn {
+    font-size: 16px; /* 設定按鈕字體大小 */
+  }
+	#letter {
+		font-size: 16px;
+	}
+	
+	
+}
+
+/* 平板：螢幕寬度 768px 至 1024px */
+@media ( min-width : 362px ) and (max-width : 768px ){
+/*
+	.row {
+    flex-direction: column;  垂直排列 
+  }
+*/
+
+.col-12 {
+    width: 100%; /* 確保每個元素在手機螢幕上占滿整行 */
+  }
+
+
+  h1 {
+    font-size: 28px; /* 設定標題字體大小 */
+  }
+
+  h4 {
+    font-size: 20px; /* 設定價格字體大小 */
+  }
+
+  p {
+    font-size: 16px; /* 設定段落字體大小 */
+  }
+
+  .btn {
+    font-size: 14px; /* 設定按鈕字體大小 */
+  }
+	#letter {
+		font-size: 14px;
+	}
+	
+	
+}
+
+/* 手機：螢幕寬度小於 768px */
+/* 手機：螢幕寬度小於 768px */
+@media (max-width : 360px ){
+
+  .col-12 {
+    width: 100%; /* 確保每個元素在手機螢幕上占滿整行 */
+  }
+
+
+  h1 {
+    font-size: 24px; /* 設定標題字體大小 */
+  }
+
+  h4 {
+    font-size: 18px; /* 設定價格字體大小 */
+  }
+
+  p {
+    font-size: 14px; /* 設定段落字體大小 */
+  }
+
+  .btn {
+    font-size: 12px; /* 設定按鈕字體大小 */
+  }
+	#letter {
+		font-size: 12px;
+	}
+	
+	
+}

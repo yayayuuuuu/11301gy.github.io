@@ -100,6 +100,8 @@ body p {
   	margin-right: auto; /* 設置右邊外邊距為自動 */
 	 width: 80%; /* 圖片佔用螢幕的 80% */
     height: auto;
+	  margin-bottom: 10px;
+	margin-top: 10px;
   }
 
   h1 {
@@ -131,11 +133,13 @@ body p {
   }
 
   #oceanproductfoto {
-    width: 100%; /* 圖片寬度佔滿整行 */
+    width: 80%; /* 圖片寬度佔滿整行 */
     height: auto; /* 高度自動調整 */
 	display: block; /* 設置圖片為塊級元素 */
   	margin-left: auto; /* 設置左邊外邊距為自動 */
   	margin-right: auto; /* 設置右邊外邊距為自動 */
+	margin-bottom: 10px;
+	margin-top: 10px;
   }
 
   h1 {

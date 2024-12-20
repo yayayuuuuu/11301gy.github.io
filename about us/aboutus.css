@@ -26,6 +26,17 @@
 .row .col-3 #list-example {
     margin-left: 10px;
 }
+ .responsive-image {
+            width: 100%;
+            height: auto;
+            max-width: 400px; /* Default maximum width */
+        }
+#brr {
+	margin-right: 10px;
+}
+
+
+
 
 
 /* 電腦版：螢幕寬度大於 1366px */
@@ -50,6 +61,9 @@
 	#letter {
 		font-size: 16px;
 	}
+ .responsive-image {
+                max-width: 500px; /* Larger maximum width for desktop */
+            }	
 	
 	
 }
@@ -79,13 +93,15 @@
     font-size: 16px; /* 設定段落字體大小 */
   }
 
-  .btn {
+  	.btn {
     font-size: 14px; /* 設定按鈕字體大小 */
   }
 	#letter {
 		font-size: 14px;
 	}
-	
+ 	.responsive-image {
+                max-width: 450px; /* Adjusted width for tablets */
+            }	
 	
 }
 
@@ -116,6 +132,10 @@
 	#letter {
 		font-size: 12px;
 	}
+	
+ .responsive-image {
+                max-width: 300px; /* Smaller maximum width for mobile */
+            }
 	
 	
 }

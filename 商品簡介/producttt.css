@@ -1,6 +1,11 @@
 @charset "utf-8";
+/*
 body p {
     margin-left: 20px;
+}
+*/
+#oceanaccessorie{
+	 margin-left: 20px;
 }
 .row .col-3 #list-tab {
     margin-left: 10px;
@@ -13,14 +18,30 @@ body p {
 }
 #nav-tabContent #list-home p {
 }
+
+
+
+#list-tab{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+/*
 #nav-tabContent #list-home img {
     margin-left:10px;
 }
+*/
+/*
+
+
 .row .col-4 img {
     margin-left: -5px;
     -webkit-box-shadow: 0px 0px #1C2263;
     box-shadow: 0px 0px #1C2263;
 }
+*/
+
+
+
 
 /* 可選：響應式調整 */
 /*
@@ -61,9 +82,16 @@ body p {
 
 /* 平板：螢幕寬度 768px 至 1024px */
 @media ( min-width : 362px ) and (max-width : 768px ){
-  img {
-    width: 100%; /* 圖片佔用螢幕的 80% */
+	
+  #oceanproductfoto {
+    
+	  display: block; /* 設置圖片為塊級元素 */
+  	margin-left: auto; /* 設置左邊外邊距為自動 */
+  	margin-right: auto; /* 設置右邊外邊距為自動 */
+	 width: 80%; /* 圖片佔用螢幕的 80% */
     height: auto;
+	
+	
   }
 
   h1 {
@@ -90,9 +118,12 @@ body p {
     width: 100%; /* 確保每個元素在手機螢幕上占滿整行 */
   }
 
-  img {
+  #oceanproductfoto {
     width: 100%; /* 圖片寬度佔滿整行 */
     height: auto; /* 高度自動調整 */
+	display: block; /* 設置圖片為塊級元素 */
+  	margin-left: auto; /* 設置左邊外邊距為自動 */
+  	margin-right: auto; /* 設置右邊外邊距為自動 */
   }
 
   h1 {

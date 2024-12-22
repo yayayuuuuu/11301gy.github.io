@@ -20,6 +20,13 @@ body p {
 */
 
 
+#picturee1{
+  transform: translateX(20%); /* 移動SVG，相當於添加margin */
+  
+}
+
+
+
 
 #list-tab{
 	margin-left: 20px;

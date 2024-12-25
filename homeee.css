@@ -1,20 +1,23 @@
-/@charset "utf-8";
+@charset "utf-8";
 .row .col-4 p {
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
-	color: #1C2263;
+	/* color: #1C2263; */
 }
 
 body p {
     text-align: center;
 }
 .btn.btn-outline-info {
-    margin-left: 46%;
+    /* margin-left: 45%; */
     color: #1C2263;
 }
 .btn.btn-outline-primary {
-    margin-left: 46%;
+    /* margin-left: 45%; */
+    position: absolute;
+    left: 50%; /* 水平中心 */
+    transform: translate(-50%, -50%); /* 修正偏移，確保按鈕中心對齊 */
 }
 
 .navbar-toggle {
@@ -30,7 +33,55 @@ body p {
     border-radius: 4px;
 }
 
+/* 視差背景 */
+.parallax {
+  background-image: url('image/your-background-image.jpg'); /* 替換成你想要的背景圖 */
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+/* 固定 navbar 時的樣式 */
+.navbar.fixed-top {
+  background-color: rgba(232, 226, 214, 0.9); /* 背景色透明效果 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加陰影 */
+  transition: background-color 0.3s ease;
+}
+
+/* 初始 navbar */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+/* .content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #333;
+} */
+
+#home_product1{
+  width: 80vw; /* 相對於視窗寬度的 30% */
+  /* height: 80vh;  */
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+
+.image-container {
+  display: flex; /* 使用 flexbox 進行佈局 */
+  justify-content: space-between; /* 圖片之間的空隙相等 */
+  margin: 0 10%; /* 左右邊距為 10% */
+}
+
+.image-container img {
+  width: 30%; /* 每張圖片的寬度為容器寬度的 30% */
+  height: auto; /* 高度自動調整，保持比例 */
+}
 
 /* 電腦版：螢幕寬度大於 1366px */
 @media (min-width: 1366px) {
@@ -89,6 +140,15 @@ body p {
 	#letter {
 		font-size: 14px;
 	}
+  .image-container {
+    flex-direction: column; /* 小螢幕下改為垂直排列 */
+    align-items: center;
+      }
+      
+  .image-container img {
+    width: 60%; /* 圖片寬度調整為 80% */
+    margin-bottom: 10px; /* 圖片之間的空隙 */
+      }
 	
 	
 }
@@ -120,7 +180,8 @@ body p {
 	#letter {
 		font-size: 12px;
 	}
-	
+
+
 	
 }
 

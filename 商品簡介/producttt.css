@@ -19,9 +19,22 @@ body p {
 }
 */
 
+/* 固定 navbar 時的樣式 */
+.navbar.fixed-top {
+  background-color: rgba(232, 226, 214, 0.9); /* 背景色透明效果 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加陰影 */
+  transition: background-color 0.3s ease;
+}
+
+/* 初始 navbar */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+
 
 #picturee1{
-  transform: translateX(20%); /* 移動SVG，相當於添加margin */
+  transform: translateX(25%); /* 移動SVG，相當於添加margin */
   
 }
 

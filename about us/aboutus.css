@@ -1,12 +1,22 @@
 @charset "utf-8";
+/* 固定 navbar 時的樣式 */
+.navbar.fixed-top {
+  background-color: rgba(232, 226, 214, 0.9); /* 背景色透明效果 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加陰影 */
+  transition: background-color 0.3s ease;
+}
 
+/* 初始 navbar */
+.navbar {
+  transition: background-color 0.3s ease;
+}
 .row .col-9 .scrollspy-example {
-    color: #1C2263;
+    /* color: #1C2263; */
 }
 .col-9 .scrollspy-example #list-item-1 {
     box-shadow: 0 1px;
     padding-bottom: 5px;
-    color: #1C2263;
+    /* color: #1C2263; */
 }
 
 
@@ -134,8 +144,11 @@
 	}
 	
  .responsive-image {
-                max-width: 300px; /* Smaller maximum width for mobile */
+    max-width: 300px; /* Smaller maximum width for mobile */
             }
+
+
+ 
 	
 	
 }

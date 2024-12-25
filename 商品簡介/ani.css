@@ -1,0 +1,175 @@
+/* 定義動畫 */
+
+#oceanwords{
+    transform: translateX(-100%);
+    transition: transform 1s;
+}
+#threadsword{
+    transform: translateX(100%);
+    transition: transform 1s;
+}
+
+/* #p1{
+    opacity: 0;
+    transition: opacity 5s;
+    } */
+
+#lineeeee{
+    opacity: 0;
+    transition: opacity 2s;
+    }
+
+
+/* 初始狀態：透明並從右側偏移 100px */
+#shrimps {
+    opacity: 0;
+    transform: rotate(0deg); /* 初始狀態不旋轉 */
+    transition: opacity 1s ease; /* 平滑過渡透明度 */
+  }
+  
+  /* 當元素顯示時：移動到正常位置並變為不透明 */
+  #shrimps.show {
+    opacity: 1;
+    transform: translateX(0); /* 恢復到原始位置 */
+    animation: swing 2s ease-in-out infinite; /* 開始小幅搖擺動畫 */
+  }
+  
+  /* 定義小幅搖擺動畫 */
+  @keyframes swing {
+    0% {
+      transform: rotate(0deg); /* 開始時旋轉 -5 度 */
+    }
+    50% {
+      transform: rotate(2deg); /* 到達中間時旋轉 5 度 */
+    }
+    100% {
+      transform: rotate(0deg); /* 結束時恢復到 -5 度 */
+    }
+  }
+
+  
+  
+
+#ee-2,#cc,#oo,#dishh,#ff,#rr,#ii,#ee,#nn,#dd,#ll,#yy{
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.5s ease-in-out;
+    }
+      
+#ee-2.show,#cc.show,#oo.show,#dishh.show,#ff.show,#rr.show,#ii.show,#ee.show,#nn.show,#dd.show,#ll.show,#yy.show {
+    opacity: 1;
+    transform: translateY(0);
+    }
+
+@keyframes shake {
+    0% { transform: translateX(-10px); }
+    25% { transform: translateX(0px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(0px); }
+    100% { transform: translateX(-10px); }
+}
+
+/* 設置每個元素的過渡效果
+#product21, #product22, #product31, #product32, #product33, #product41, #product42, #product43, #p1, #oceanwords, #threadsword, #lineeeee {
+    opacity: 0; /* 初始透明度 */
+    /* transition: opacity 1s ease, transform 1s ease; /* 添加透明度和變換的過渡效果 */
+  /* } */ 
+  
+#product21,#product22{
+    opacity: 0;
+    /* transition: opacity 5s; */
+    transition: opacity 3s ease;
+  }
+  
+
+
+/* 初始狀態：縮小且透明，保持在原始位置 */
+#productword22, #paper {
+    opacity: 0;
+    transform: scale(0.01); /* 縮得非常小，但位置保持不變 */
+    transform-origin: center; /* 從元素中心進行放大 */
+    transition: transform 1s ease-out, opacity 1s ease-out; /* 平滑過渡 */
+  }
+  
+  /* 當元素顯示時：恢復到正常大小且變為不透明 */
+  #productword22.show, #paper.show {
+    opacity: 1;
+    transform: scale(1); /* 放大到原本大小 */
+  }
+  
+  
+
+
+/* 初始樣式 */
+#p1,#product31, #product32, #product33, #product41, #product42, #product43 {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out; /* 定義透明度的過渡效果 */
+}
+
+/* 進入視窗範圍時的樣式 */
+#p1.fade-in,#product31.fade-in, #product32.fade-in, #product33.fade-in, #product41.fade-in, #product42.fade-in, #product43.fade-in {
+  opacity: 1;
+}
+
+#designword,#and,#awarenessword {
+            
+    animation-duration: 1s; /* 設置動畫持續時間為 2 秒 */
+    transition: opacity 3s ease-in-out; /* 平滑顯示 */
+        }
+  
+#fish32 {
+  /* position: absolute; */
+  /* font-size: 2rem;
+  white-space: nowrap; */
+  
+  animation: move-left 12s linear infinite;
+  animation-delay: 0s; /* 可根據需要調整 */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* transform: translateX(-100%);
+    transition: transform 1s ease-in-out; 加入動畫過渡 */
+    /* left: 100%; 初始位置在右側 */
+        }
+  
+#fish33 {
+  /* position: absolute; */
+  /* font-size: 2rem;
+  white-space: nowrap; */
+  animation: move-left 12s linear infinite;
+  animation-delay: 1s; /* 魚的延遲時間 */
+  
+    /* transform: translateX(-100%);
+    transition: transform 1s ease-in-out; 加入動畫過渡 */
+    /* left: 120%; 初始位置在右側 */
+        }
+              
+#fish34 {
+  /* position: absolute; */
+  /* font-size: 2rem;
+  white-space: nowrap; */
+  animation: move-left 12s linear infinite;
+  animation-delay: 2s; /* 魚的延遲時間 */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* transform: translateX(-100%);
+    transition: transform 1s ease-in-out; 加入動畫過渡 */
+    /* left: 140%; 初始位置在右側 */
+        }
+
+/* .fish.in-view {
+    transform: translateX(-100%); 
+        }
+          
+.fish.out-of-view {
+    transform: translateX(100%); 
+}  */
+  /* 定義移動動畫 */
+  @keyframes move-left {
+    0% {
+     
+      transform: translateX(0); /* 從 viewBox 的右側進入 */
+    }
+    100% {
+      transform: translateX(-1000px); /* 從 viewBox 的左側離開 */
+    }
+  }

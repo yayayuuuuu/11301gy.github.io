@@ -65,7 +65,7 @@ body p {
 */
 /* 電腦版：螢幕寬度大於 1366px */
 @media (min-width: 1366px) {
-  img {
+  #oceanproductfoto {
     width: 100%; /* 圖片佔用螢幕的 80% */
     height: auto;
   }

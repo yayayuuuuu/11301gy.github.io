@@ -198,7 +198,7 @@ body p {
 }
 
 /* 平板：螢幕寬度 768px 至 1024px */
-@media (min-width: 768px) and (max-width: 1199px){
+@media (min-width: 769px) and (max-width: 1199px){
 /*
 	.row {
     flex-direction: column;  垂直排列 

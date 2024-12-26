@@ -4,7 +4,7 @@
 
 
 /* 電腦版：螢幕寬度大於 1366px */
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   /* .row .col-4 p {
     font-style: normal;
     font-variant: normal;
@@ -157,7 +157,7 @@ body p {
 }
 
 /* 平板：螢幕寬度 768px 至 1024px */
-@media screen and (min-width: 769px) and (max-width: 1199px){
+@media (min-width: 769px) and (max-width: 1199px){
 /*
 	.row {
     flex-direction: column;  垂直排列 
@@ -321,7 +321,7 @@ transform: scale(1.05); /* 放大圖片 */
 
 
 /* 手機：螢幕寬度小於 768px */
-@media screen and (max-width : 768px ){
+@media (max-width : 768px ){
   .row .col-4 p {
     font-style: normal;
     font-variant: normal;
@@ -456,7 +456,7 @@ body p {
   .col-12 {
     width: 100%;
 
-
+  }
   h1 {
     font-size: 24px; 
   }
@@ -475,12 +475,6 @@ body p {
 	#letter {
 		font-size: 12px;
 	}
-
- 
-
-
-
 	
 }
 
-}

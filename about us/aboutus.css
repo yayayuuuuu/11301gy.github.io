@@ -49,20 +49,10 @@
   cursor: pointer;
 }
 /* 固定 navbar 時的樣式 */
-.navbar.fixed-top {
+.fixed-top {
   background-color: rgba(232, 226, 214, 0.97); /* 背景色透明效果 */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   transition: background-color 0.3s ease;
-}
-/* 箭頭樣式 */
-.arrow {
-  display: inline-block;
-  margin-left: 8px;
-  border: solid transparent;
-  border-width: 5px 5px 0;
-  border-top-color: black;
-  transition: transform 0.3s ease;
-  transform: rotate(-90deg);
 }
 
 /* 下拉選單樣式 */
@@ -198,21 +188,21 @@
 
 
   h1 {
-    font-size: 36px; /* 設定標題字體大小 */
+    font-size: 36px;
   }
   h3 {
-    font-size: 28px; /* 設定價格字體大小 */
+    font-size: 28px; 
   }
   h4 {
-    font-size: 24px; /* 設定價格字體大小 */
+    font-size: 24px; 
   }
 
   p {
-    font-size: 18px; /* 設定段落字體大小 */
+    font-size: 18px;
   }
 
   .btn {
-    font-size: 16px; /* 設定按鈕字體大小 */
+    font-size: 16px; 
   }
 	#letter {
 		font-size: 16px;
@@ -232,21 +222,21 @@
   }
 */
   h1 {
-    font-size: 28px; /* 設定標題字體大小 */
+    font-size: 28px; 
   }
   h3 {
-    font-size: 24px; /* 設定價格字體大小 */
+    font-size: 24px; 
   }
   h4 {
-    font-size: 20px; /* 設定價格字體大小 */
+    font-size: 20px; 
   }
 
   p {
-    font-size: 16px; /* 設定段落字體大小 */
+    font-size: 16px; 
   }
 
   	.btn {
-    font-size: 14px; /* 設定按鈕字體大小 */
+    font-size: 14px; 
   }
 	#letter {
 		font-size: 14px;
@@ -281,22 +271,21 @@
 
 
   h1 {
-    font-size: 24px; /* 設定標題字體大小 */
+    font-size: 24px; 
   }
   h3 {
-    font-size: 20px; /* 設定價格字體大小 */
+    font-size: 20px; 
   }
   h4 {
-    font-size: 18px; /* 設定價格字體大小 */
+    font-size: 18px; 
   }
 
   p {
-    font-size: 14px; /* 設定段落字體大小 */
+    font-size: 14px; 
   }
 
   .btn {
-    font-size: 12px; /* 設定按鈕字體大小 */
-  }
+    font-size: 12px; 
 	#letter {
 		font-size: 12px;
 	}
@@ -334,11 +323,12 @@
 }
 .fixed-sidebar {
   position: fixed;
-  top: 80px; /* 固定在頂部 */
+  top: 80px;
   left: 10px;
   right:10px;
   width: 96.5%; /* 讓側邊欄佔據全寬 */
   z-index: 999; /* 確保它在 navbar 之下 */
 }
 
+}
 }

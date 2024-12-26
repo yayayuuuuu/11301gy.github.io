@@ -1,5 +1,328 @@
 @charset "utf-8";
-.row .col-4 p {
+
+
+
+
+/* 電腦版：螢幕寬度大於 1366px */
+@media screen and (min-width: 1200px) {
+  /* .row .col-4 p {
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+	color: #1C2263;
+} */
+
+body p {
+    text-align: center;
+}
+.btn.btn-outline-info {
+    /* margin-left: 45%; */
+    color: #1C2263;
+}
+.btn.btn-outline-primary {
+    /* margin-left: 45%; */
+    position: absolute;
+    left: 50%; /* 水平中心 */
+    transform: translate(-50%, -50%); /* 修正偏移，確保按鈕中心對齊 */
+}
+ /* Navbar 基本樣式 */
+ .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #E8E2D6;
+  padding: 10px 20px;
+}
+
+.navbar-brand img {
+  width: 75px;
+}
+
+/* 選單容器樣式 */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  position: relative;
+  margin-right: 20px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+/* 固定 navbar 時的樣式 */
+.navbar.fixed-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #E8E2D6; */
+  padding: 10px 20px;
+  background-color: rgba(232, 226, 214, 0.97); /* 背景色透明效果 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease;
+}
+
+
+/* 下拉選單樣式 */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 8px 20px;
+}
+
+.dropdown-menu a {
+  color: #333;
+}
+
+
+
+#home_product1{
+  display: flex; /* 使用 flexbox 進行佈局 */
+  justify-content: center; /* 讓所有圖片居中 */
+  width: 80vw; /* 相對於視窗寬度的 30% */
+  /* height: 80vh;  */
+  /* margin-left: 10%;
+  margin-top: 5%; */
+  margin: 0 auto; /* 左右邊距自動，讓容器居中 */
+  margin-top: 5%;
+}
+
+.image-container {
+  display: flex; /* 使用 flexbox 進行佈局 */
+  justify-content: center; /* 讓所有圖片居中 */
+  gap: 10%; /* 圖片之間的間距 */
+  margin: 0 auto; /* 左右邊距自動，讓容器居中 */
+  width: 80%; /* 容器寬度為頁面寬度的 80% */
+  
+}
+
+#home_product2, #home_product3, #home_product4 {
+  flex: 1; /* 每張圖片平分剩餘空間 */
+  max-width:100%; /* 每張圖片最多占容器的 30% */
+  height: auto; /* 高度自動調整，保持比例 */
+}
+
+
+.zoom-image {
+  transition: transform 0.3s ease; /* 添加平滑過渡效果 */
+  cursor: pointer;
+}
+
+.zoom-image:hover {
+  transform: scale(1.05); /* 放大圖片 */
+}
+
+
+  h1 {
+    font-size: 36px; /* 設定標題字體大小 */
+  }
+
+  h4 {
+    font-size: 24px; /* 設定價格字體大小 */
+  }
+
+  p {
+    font-size: 18px; /* 設定段落字體大小 */
+  }
+
+  .btn {
+    font-size: 16px; /* 設定按鈕字體大小 */
+  }
+	#letter {
+		font-size: 16px;
+	}
+
+
+}
+
+/* 平板：螢幕寬度 768px 至 1024px */
+@media screen and (min-width: 769px) and (max-width: 1199px){
+/*
+	.row {
+    flex-direction: column;  垂直排列 
+  }
+*/
+/* .row .col-4 p {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+color: #1C2263;
+} */
+
+body p {
+  text-align: center;
+}
+.btn.btn-outline-info {
+  /* margin-left: 45%; */
+  color: #1C2263;
+}
+.btn.btn-outline-primary {
+  /* margin-left: 45%; */
+  position: absolute;
+  left: 50%; /* 水平中心 */
+  transform: translate(-50%, -50%); /* 修正偏移，確保按鈕中心對齊 */
+}
+/* Navbar 基本樣式 */
+.navbar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #E8E2D6;
+padding: 10px 20px;
+}
+
+.navbar-brand img {
+width: 75px;
+}
+
+/* 選單容器樣式 */
+.navbar-menu {
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.navbar-menu li {
+position: relative;
+margin-right: 20px;
+}
+
+.navbar-menu a {
+text-decoration: none;
+color: #333;
+font-size: 16px;
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+/* 固定 navbar 時的樣式 */
+.navbar.fixed-top {
+display: flex;
+align-items: center;
+justify-content: space-between;
+/* background-color: #E8E2D6; */
+padding: 10px 20px;
+background-color: rgba(232, 226, 214, 0.97); /* 背景色透明效果 */
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+transition: background-color 0.3s ease;
+}
+
+
+/* 下拉選單樣式 */
+.dropdown-menu {
+position: absolute;
+top: 100%;
+left: 0;
+display: none;
+background-color: #fff;
+border: 1px solid #ccc;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+list-style: none;
+margin: 0;
+padding: 10px 0;
+z-index: 1000;
+}
+
+.dropdown-menu li {
+padding: 8px 20px;
+}
+
+.dropdown-menu a {
+color: #333;
+}
+
+
+
+#home_product1{
+display: flex; /* 使用 flexbox 進行佈局 */
+justify-content: center; /* 讓所有圖片居中 */
+width: 80vw; /* 相對於視窗寬度的 30% */
+/* height: 80vh;  */
+/* margin-left: 10%;
+margin-top: 5%; */
+margin: 0 auto; /* 左右邊距自動，讓容器居中 */
+margin-top: 5%;
+}
+
+.image-container {
+display: flex; /* 使用 flexbox 進行佈局 */
+justify-content: center; /* 讓所有圖片居中 */
+gap: 10%; /* 圖片之間的間距 */
+margin: 0 auto; /* 左右邊距自動，讓容器居中 */
+width: 80%; /* 容器寬度為頁面寬度的 80% */
+
+}
+
+#home_product2, #home_product3, #home_product4 {
+flex: 1; /* 每張圖片平分剩餘空間 */
+max-width:100%; /* 每張圖片最多占容器的 30% */
+height: auto; /* 高度自動調整，保持比例 */
+}
+
+
+.zoom-image {
+transition: transform 0.3s ease; /* 添加平滑過渡效果 */
+cursor: pointer;
+}
+
+.zoom-image:hover {
+transform: scale(1.05); /* 放大圖片 */
+}
+
+.col-12 {
+    width: 100%; /* 確保每個元素在手機螢幕上占滿整行 */
+  }
+
+
+  h1 {
+    font-size: 28px; /* 設定標題字體大小 */
+  }
+
+  h4 {
+    font-size: 20px; /* 設定價格字體大小 */
+  }
+
+  p {
+    font-size: 16px; /* 設定段落字體大小 */
+  }
+
+  .btn {
+    font-size: 14px; /* 設定按鈕字體大小 */
+  }
+	#letter {
+		font-size: 14px;
+	}
+ 
+
+  
+}
+
+
+/* 手機：螢幕寬度小於 768px */
+@media screen and (max-width : 768px ){
+  .row .col-4 p {
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
@@ -55,20 +378,16 @@ body p {
 }
 /* 固定 navbar 時的樣式 */
 .navbar.fixed-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #E8E2D6; */
+  padding: 10px 20px;
   background-color: rgba(232, 226, 214, 0.97); /* 背景色透明效果 */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   transition: background-color 0.3s ease;
 }
-/* 箭頭樣式 */
-.arrow {
-  display: inline-block;
-  margin-left: 8px;
-  border: solid transparent;
-  border-width: 5px 5px 0;
-  border-top-color: black;
-  transition: transform 0.3s ease;
-  transform: rotate(-90deg);
-}
+
 
 /* 下拉選單樣式 */
 .dropdown-menu {
@@ -94,44 +413,6 @@ body p {
 }
 
 
-/* .navbar-toggle {
-    position: relative;
-    float: right;
-    margin-right: 15px;
-    padding: 9px 10px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    background-color: transparent;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-} */
-
-
-
-
-/* 初始 navbar */
-/* .navbar {
-  transition: background-color 0.3s ease;
-} */
-
-/* .content {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  color: #333;
-} */
-/* 視差背景 */
-/* .parallax {
-  background-image: url('image/your-background-image.jpg'); 
-  height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
 #home_product1{
   display: flex; /* 使用 flexbox 進行佈局 */
@@ -140,140 +421,66 @@ body p {
   /* height: 80vh;  */
   /* margin-left: 10%;
   margin-top: 5%; */
-  margin: 0 auto; /* 左右邊距自動，讓容器居中 */
+  margin: 0 auto;
   margin-top: 5%;
 }
 
 .image-container {
-  display: flex; /* 使用 flexbox 進行佈局 */
-  justify-content: center; /* 讓所有圖片居中 */
-  gap: 10%; /* 圖片之間的間距 */
-  margin: 0 auto; /* 左右邊距自動，讓容器居中 */
-  width: 80%; /* 容器寬度為頁面寬度的 80% */
+  display: flex; 
+  justify-content: center;
   
+  margin: 0 auto;
+  width: 80%; 
+   flex-direction: column; /* 改为垂直排列 */
+    align-items: center; /* 子元素垂直居中 */
+    gap: 50px;
 }
 
 #home_product2, #home_product3, #home_product4 {
   flex: 1; /* 每張圖片平分剩餘空間 */
-  max-width:100%; /* 每張圖片最多占容器的 30% */
-  height: auto; /* 高度自動調整，保持比例 */
+  max-width:100%; 
+  height: auto; 
+  max-width: 100%;
 }
 
 
 .zoom-image {
-  transition: transform 0.3s ease; /* 添加平滑過渡效果 */
+  transition: transform 0.3s ease; 
   cursor: pointer;
 }
 
 .zoom-image:hover {
-  transform: scale(1.05); /* 放大圖片 */
+  transform: scale(1.05); 
 }
-
-
-
-/* 電腦版：螢幕寬度大於 1366px */
-@media (min-width: 1200px) {
-
-
-  h1 {
-    font-size: 36px; /* 設定標題字體大小 */
-  }
-
-  h4 {
-    font-size: 24px; /* 設定價格字體大小 */
-  }
-
-  p {
-    font-size: 18px; /* 設定段落字體大小 */
-  }
-
-  .btn {
-    font-size: 16px; /* 設定按鈕字體大小 */
-  }
-	#letter {
-		font-size: 16px;
-	}
-
-
-}
-
-/* 平板：螢幕寬度 768px 至 1024px */
-@media (min-width: 769px) and (max-width: 1199px){
-/*
-	.row {
-    flex-direction: column;  垂直排列 
-  }
-*/
-
-.col-12 {
-    width: 100%; /* 確保每個元素在手機螢幕上占滿整行 */
-  }
-
-
-  h1 {
-    font-size: 28px; /* 設定標題字體大小 */
-  }
-
-  h4 {
-    font-size: 20px; /* 設定價格字體大小 */
-  }
-
-  p {
-    font-size: 16px; /* 設定段落字體大小 */
-  }
-
-  .btn {
-    font-size: 14px; /* 設定按鈕字體大小 */
-  }
-	#letter {
-		font-size: 14px;
-	}
- 
-
-  
-}
-
-/* 手機：螢幕寬度小於 768px */
-/* 手機：螢幕寬度小於 768px */
-@media (max-width : 768px ){
 
   .col-12 {
-    width: 100%; /* 確保每個元素在手機螢幕上占滿整行 */
-  }
+    width: 100%;
 
 
   h1 {
-    font-size: 24px; /* 設定標題字體大小 */
+    font-size: 24px; 
   }
 
   h4 {
-    font-size: 18px; /* 設定價格字體大小 */
+    font-size: 18px;
   }
 
   p {
-    font-size: 14px; /* 設定段落字體大小 */
+    font-size: 14px; 
   }
 
   .btn {
-    font-size: 12px; /* 設定按鈕字體大小 */
+    font-size: 12px; 
   }
 	#letter {
 		font-size: 12px;
 	}
 
-  .image-container {
-   
-    
-    flex-direction: column; /* 改为垂直排列 */
-    align-items: center; /* 子元素垂直居中 */
-    gap: 10px; /* 圖片之間的間距 */
-   
-  }
+ 
 
-  #home_product2, #home_product3, #home_product4 {
-    max-width: 100%; /* 图片宽度限制为容器的 80% */
-  }
+
 
 	
 }
 
+}

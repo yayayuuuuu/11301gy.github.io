@@ -55,6 +55,11 @@ body p {
 }
 /* 固定 navbar 時的樣式 */
 .navbar.fixed-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #E8E2D6; */
+  padding: 10px 20px;
   background-color: rgba(232, 226, 214, 0.97); /* 背景色透明效果 */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   transition: background-color 0.3s ease;
@@ -96,10 +101,6 @@ body p {
 
 
 
-#picturee1{
-  transform: translateX(25%); /* 移動SVG，相當於添加margin */
-  
-}
 
 
 
@@ -142,24 +143,24 @@ body p {
 /* 電腦版：螢幕寬度大於 1366px */
 @media (min-width: 1200px) {
   #oceanproductfoto {
-    width: 100%; /* 圖片佔用螢幕的 80% */
+    width: 100%; 
     height: auto;
   }
 
   h1 {
-    font-size: 36px; /* 設定標題字體大小 */
+    font-size: 36px; 
   }
 
   h4 {
-    font-size: 24px; /* 設定價格字體大小 */
+    font-size: 24px; 
   }
 
   p {
-    font-size: 18px; /* 設定段落字體大小 */
+    font-size: 18px; 
   }
 
   .btn {
-    font-size: 16px; /* 設定按鈕字體大小 */
+    font-size: 16px;
   }
 	#letter {
 		font-size: 16px;
@@ -178,69 +179,70 @@ body p {
   } */
 
   #oceanproductfoto {
-	  display: block; /* 設置圖片為塊級元素 */
-  	margin-left: auto; /* 設置左邊外邊距為自動 */
-  	margin-right: auto; /* 設置右邊外邊距為自動 */
-	 width: 80%; /* 圖片佔用螢幕的 80% */
+	  display: block; 
+  	margin-left: auto;
+  	margin-right: auto; 
+	 width: 80%; 
     height: auto;
 	  margin-bottom: 10px;
 	margin-top: 10px;
   }
 
   h1 {
-    font-size: 28px; /* 設定標題字體大小 */
+    font-size: 28px;
   }
 
   h4 {
-    font-size: 20px; /* 設定價格字體大小 */
+    font-size: 20px; 
   }
 
   p {
-    font-size: 16px; /* 設定段落字體大小 */
+    font-size: 16px; 
   }
 
   .btn {
-    font-size: 14px; /* 設定按鈕字體大小 */
+    font-size: 14px;
   }
 	#letter {
 		font-size: 14px;
 	}
 }
 
-/* 手機：螢幕寬度小於 768px */
+
 /* 手機：螢幕寬度小於 768px */
 @media (max-width : 768px ){
 
   .col-12 {
-    width: 100%; /* 確保每個元素在手機螢幕上占滿整行 */
+    width: 100%; 
   }
-
+ 
   #oceanproductfoto {
-    width: 80%; /* 圖片寬度佔滿整行 */
-    height: auto; /* 高度自動調整 */
-	display: block; /* 設置圖片為塊級元素 */
-  	margin-left: auto; /* 設置左邊外邊距為自動 */
-  	margin-right: auto; /* 設置右邊外邊距為自動 */
+    width: 50%; 
+    height: auto; 
+
+    display: block; /* 設置圖片為塊級元素 */
+  	margin-left: auto; 
+  	margin-right: auto; 
 	margin-bottom: 10px;
 	margin-top: 10px;
   }
 
   h1 {
-    font-size: 24px; /* 設定標題字體大小 */
+    font-size: 24px; 
   }
 
   h4 {
-    font-size: 18px; /* 設定價格字體大小 */
+    font-size: 18px; 
   }
 
   p {
-    font-size: 14px; /* 設定段落字體大小 */
+    font-size: 14px;
   }
-
   .btn {
-    font-size: 12px; /* 設定按鈕字體大小 */
+    font-size: 12px; 
   }
 	#letter {
 		font-size: 12px;
 	}
+
 }

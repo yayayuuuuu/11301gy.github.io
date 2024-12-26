@@ -12,7 +12,7 @@
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
-  opacity: 1; /* 懸停時顯示 */
+  opacity: 1; 
   pointer-events: auto; /* 啟用指標事件 */
 }
 
@@ -39,27 +39,27 @@
 /* 初始狀態：透明並從右側偏移 100px */
 #shrimps {
     opacity: 0;
-    transform: rotate(0deg); /* 初始狀態不旋轉 */
-    transition: opacity 1s ease; /* 平滑過渡透明度 */
+    transform: rotate(0deg); 
+    transition: opacity 1s ease; /
   }
   
   /* 當元素顯示時：移動到正常位置並變為不透明 */
   #shrimps.show {
     opacity: 1;
-    transform: translateX(0); /* 恢復到原始位置 */
+    transform: translateX(0); 
     animation: swing 2s ease-in-out infinite; /* 開始小幅搖擺動畫 */
   }
   
   /* 定義小幅搖擺動畫 */
   @keyframes swing {
     0% {
-      transform: rotate(0deg); /* 開始時旋轉 -5 度 */
+      transform: rotate(0deg);
     }
     50% {
-      transform: rotate(2deg); /* 到達中間時旋轉 5 度 */
+      transform: rotate(2deg);
     }
     100% {
-      transform: rotate(0deg); /* 結束時恢復到 -5 度 */
+      transform: rotate(0deg); 
     }
   }
 
@@ -119,7 +119,7 @@
 /* 初始樣式 */
 #p1,#product31, #product32, #product33, #product41, #product42, #product43 {
   opacity: 0;
-  transition: opacity 1.5s ease-in-out; /* 定義透明度的過渡效果 */
+  transition: opacity 1.5s ease-in-out; 
 }
 
 /* 進入視窗範圍時的樣式 */
@@ -129,8 +129,8 @@
 
 #designword,#and,#awarenessword {
             
-    animation-duration: 1s; /* 設置動畫持續時間為 2 秒 */
-    transition: opacity 3s ease-in-out; /* 平滑顯示 */
+    animation-duration: 1s; 
+    transition: opacity 3s ease-in-out; 
         }
   
 #fish32 {
@@ -152,7 +152,7 @@
   /* font-size: 2rem;
   white-space: nowrap; */
   animation: move-left 12s linear infinite;
-  animation-delay: 1s; /* 魚的延遲時間 */
+  animation-delay: 1s; 
   
     /* transform: translateX(-100%);
     transition: transform 1s ease-in-out; 加入動畫過渡 */
@@ -183,9 +183,9 @@
   @keyframes move-left {
     0% {
      
-      transform: translateX(0); /* 從 viewBox 的右側進入 */
+      transform: translateX(100%);
     }
     100% {
-      transform: translateX(-1000px); /* 從 viewBox 的左側離開 */
+      transform: translateX(-1000px); 
     }
   }

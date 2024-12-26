@@ -1,0 +1,131 @@
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* 下拉選單樣式 */
+  .dropdown-menu {
+    margin-top: 0; /* 修正下拉選單與文字之間的距離 */
+    transition: opacity 0.3s ease; /* 添加過渡效果 */
+    opacity: 0; /* 初始透明度 */
+    pointer-events: none; /* 初始禁用指標事件 */
+  }
+  
+  .nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1; /* 懸停時顯示 */
+    pointer-events: auto; /* 啟用指標事件 */
+  }
+
+  /* #m:before,#m:after{
+    content:"";
+    box-sizing:border-box;
+    position:absolute;
+    top:0;
+    right:0; 
+    width:100px;
+    height:50px;
+    background:#0ce;
+    border-style:solid;
+    border-color:#000;
+    border-width:6px 6px 0;
+    border-radius:50px 50px 0 0;
+    transform-origin:50px 50px;
+  }
+  #m:before{
+    z-index:1;
+    -webkit-animation:a1 5s infinite linear;
+    transform:rotate(-90deg);
+  }
+  #m:after{
+    opacity:0;
+    z-index:2;
+    transform:rotate(90deg);
+    -webkit-animation:a2 5s infinite linear;
+  }
+  @-webkit-keyframes a1{
+    0%{ 
+      transform:rotate(-90deg);
+    }
+    100%{ 
+      transform:rotate(270deg);
+    }
+  }
+  @-webkit-keyframes a2{
+    0%{
+      opacity:0;
+    }
+    49.99%{
+      opacity:0;
+    }
+    50%{
+      opacity:1;
+    }
+    100%{
+      opacity:1;
+    }
+  }
+  @-webkit-keyframes a{
+    0%{
+      margin-left:50px;
+      width:50px;
+      border-radius:0 50px 50px 0;
+    }
+    49.99%{
+      margin-left:50px;
+      width:50px;
+      border-radius:0 50px 50px 0;
+    }
+    50%{
+      margin-left:0;
+      width:100px;
+      border-radius:0;
+    }
+    100%{
+      margin-left:0;
+      width:100px;
+      border-radius:0;
+    }
+  } */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* 自訂屬性，留意支援程度： https://caniuse.com/?search=%40property */
+  @property --percentage{
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+  }
+
+  @keyframes pieAni {
+    from {
+      --percentage: 0;
+    }
+  }
+
+  
+  .pie::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+
+    
+    inset: 0;
+
+    
+    background: conic-gradient(var(--color) calc(var(--percentage) * 1%),#0000 0%), #eee;
+
+  
+    -webkit-mask-image: radial-gradient(farthest-side,#0000 calc(100% - 10px),#000 calc(100% - 10px));
+    mask-image: radial-gradient(farthest-side,#0000 calc(100% - 10px),#000 calc(100% - 10px));
+  }
+  .pie.ani{
+    animation-name: pieAni;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+  }
+
+  section.temp{
+    border: 2px solid black;
+    height: 1000px;
+  }

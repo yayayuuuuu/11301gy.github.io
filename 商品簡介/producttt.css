@@ -19,17 +19,80 @@ body p {
 }
 */
 
-/* 固定 navbar 時的樣式 */
-.navbar.fixed-top {
-  background-color: rgba(232, 226, 214, 0.9); /* 背景色透明效果 */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加陰影 */
-  transition: background-color 0.3s ease;
+ /* Navbar 基本樣式 */
+ .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #E8E2D6;
+  padding: 10px 20px;
 }
 
-/* 初始 navbar */
-.navbar {
+.navbar-brand img {
+  width: 75px;
+}
+
+/* 選單容器樣式 */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  position: relative;
+  margin-right: 20px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+/* 固定 navbar 時的樣式 */
+.navbar.fixed-top {
+  background-color: rgba(232, 226, 214, 0.97); /* 背景色透明效果 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   transition: background-color 0.3s ease;
 }
+/* 箭頭樣式 */
+.arrow {
+  display: inline-block;
+  margin-left: 8px;
+  border: solid transparent;
+  border-width: 5px 5px 0;
+  border-top-color: black;
+  transition: transform 0.3s ease;
+  transform: rotate(-90deg);
+}
+
+/* 下拉選單樣式 */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 8px 20px;
+}
+
+.dropdown-menu a {
+  color: #333;
+}
+
 
 
 

@@ -1,4 +1,20 @@
 /* 定義動畫 */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* 下拉選單樣式 */
+.dropdown-menu {
+  margin-top: 0; /* 修正下拉選單與文字之間的距離 */
+  transition: opacity 0.3s ease; /* 添加過渡效果 */
+  opacity: 0; /* 初始透明度 */
+  pointer-events: none; /* 初始禁用指標事件 */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1; /* 懸停時顯示 */
+  pointer-events: auto; /* 啟用指標事件 */
+}
 
 #oceanwords{
     transform: translateX(-100%);

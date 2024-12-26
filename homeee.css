@@ -19,8 +19,82 @@ body p {
     left: 50%; /* 水平中心 */
     transform: translate(-50%, -50%); /* 修正偏移，確保按鈕中心對齊 */
 }
+ /* Navbar 基本樣式 */
+ .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #E8E2D6;
+  padding: 10px 20px;
+}
 
-.navbar-toggle {
+.navbar-brand img {
+  width: 75px;
+}
+
+/* 選單容器樣式 */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  position: relative;
+  margin-right: 20px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+/* 固定 navbar 時的樣式 */
+.navbar.fixed-top {
+  background-color: rgba(232, 226, 214, 0.97); /* 背景色透明效果 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease;
+}
+/* 箭頭樣式 */
+.arrow {
+  display: inline-block;
+  margin-left: 8px;
+  border: solid transparent;
+  border-width: 5px 5px 0;
+  border-top-color: black;
+  transition: transform 0.3s ease;
+  transform: rotate(-90deg);
+}
+
+/* 下拉選單樣式 */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 8px 20px;
+}
+
+.dropdown-menu a {
+  color: #333;
+}
+
+
+/* .navbar-toggle {
     position: relative;
     float: right;
     margin-right: 15px;
@@ -31,29 +105,15 @@ body p {
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
-}
+} */
 
-/* 視差背景 */
-.parallax {
-  background-image: url('image/your-background-image.jpg'); /* 替換成你想要的背景圖 */
-  height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-/* 固定 navbar 時的樣式 */
-.navbar.fixed-top {
-  background-color: rgba(232, 226, 214, 0.9); /* 背景色透明效果 */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加陰影 */
-  transition: background-color 0.3s ease;
-}
+
 
 /* 初始 navbar */
-.navbar {
+/* .navbar {
   transition: background-color 0.3s ease;
-}
+} */
 
 /* .content {
   height: 100vh;
@@ -62,6 +122,15 @@ body p {
   justify-content: center;
   font-size: 2rem;
   color: #333;
+} */
+/* 視差背景 */
+/* .parallax {
+  background-image: url('image/your-background-image.jpg'); 
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 } */
 
 #home_product1{
@@ -74,14 +143,27 @@ body p {
 
 .image-container {
   display: flex; /* 使用 flexbox 進行佈局 */
-  justify-content: space-between; /* 圖片之間的空隙相等 */
-  margin: 0 10%; /* 左右邊距為 10% */
+  justify-content: center; /* 讓所有圖片居中 */
+  gap: 5%; /* 圖片之間的間距 */
+  margin: 0 auto; /* 左右邊距自動，讓容器居中 */
+  width: 80%; /* 容器寬度為頁面寬度的 80% */
 }
 
-.image-container img {
-  width: 30%; /* 每張圖片的寬度為容器寬度的 30% */
+#home_product2, #home_product3, #home_product4 {
+  flex: 1; /* 每張圖片平分剩餘空間 */
+  max-width:100%; /* 每張圖片最多占容器的 30% */
   height: auto; /* 高度自動調整，保持比例 */
 }
+
+.zoom-image {
+  transition: transform 0.3s ease; /* 添加平滑過渡效果 */
+  cursor: pointer;
+}
+
+.zoom-image:hover {
+  transform: scale(1.05); /* 放大圖片 */
+}
+
 
 /* 電腦版：螢幕寬度大於 1366px */
 @media (min-width: 1366px) {

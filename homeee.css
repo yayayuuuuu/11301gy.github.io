@@ -134,19 +134,23 @@ body p {
 } */
 
 #home_product1{
+  display: flex; /* 使用 flexbox 進行佈局 */
+  justify-content: center; /* 讓所有圖片居中 */
   width: 80vw; /* 相對於視窗寬度的 30% */
   /* height: 80vh;  */
-  margin-left: 10%;
+  /* margin-left: 10%;
+  margin-top: 5%; */
+  margin: 0 auto; /* 左右邊距自動，讓容器居中 */
   margin-top: 5%;
 }
-
 
 .image-container {
   display: flex; /* 使用 flexbox 進行佈局 */
   justify-content: center; /* 讓所有圖片居中 */
-  gap: 5%; /* 圖片之間的間距 */
+  gap: 10%; /* 圖片之間的間距 */
   margin: 0 auto; /* 左右邊距自動，讓容器居中 */
   width: 80%; /* 容器寬度為頁面寬度的 80% */
+  
 }
 
 #home_product2, #home_product3, #home_product4 {
@@ -154,6 +158,7 @@ body p {
   max-width:100%; /* 每張圖片最多占容器的 30% */
   height: auto; /* 高度自動調整，保持比例 */
 }
+
 
 .zoom-image {
   transition: transform 0.3s ease; /* 添加平滑過渡效果 */
@@ -165,8 +170,9 @@ body p {
 }
 
 
+
 /* 電腦版：螢幕寬度大於 1366px */
-@media (min-width: 1366px) {
+@media (max-width: 1366px) {
 
 
   h1 {
@@ -187,12 +193,12 @@ body p {
 	#letter {
 		font-size: 16px;
 	}
-	
-	
+
+
 }
 
 /* 平板：螢幕寬度 768px 至 1024px */
-@media ( min-width : 362px ) and (max-width : 768px ){
+@media (max-width : 768px ){
 /*
 	.row {
     flex-direction: column;  垂直排列 
@@ -223,16 +229,20 @@ body p {
 		font-size: 14px;
 	}
   .image-container {
-    flex-direction: column; /* 小螢幕下改為垂直排列 */
-    align-items: center;
-      }
-      
-  .image-container img {
-    width: 60%; /* 圖片寬度調整為 80% */
-    margin-bottom: 10px; /* 圖片之間的空隙 */
-      }
-	
-	
+   
+    display: flex; /* 使用 flexbox 進行佈局 */
+  justify-content: center; /* 讓所有圖片居中 */
+    flex-direction: column; /* 改为垂直排列 */
+    
+    gap: 50px; /* 圖片之間的間距 */
+    margin: 0 auto; /* 左右邊距自動，讓容器居中 */
+  }
+
+  #home_product2, #home_product3, #home_product4 {
+    max-width: 100%; /* 图片宽度限制为容器的 80% */
+  }
+
+  
 }
 
 /* 手機：螢幕寬度小於 768px */
@@ -263,6 +273,18 @@ body p {
 		font-size: 12px;
 	}
 
+  .image-container {
+   
+    
+    flex-direction: column; /* 改为垂直排列 */
+    align-items: center; /* 子元素垂直居中 */
+    gap: 10px; /* 圖片之間的間距 */
+   
+  }
+
+  #home_product2, #home_product3, #home_product4 {
+    max-width: 100%; /* 图片宽度限制为容器的 80% */
+  }
 
 	
 }

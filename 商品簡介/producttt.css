@@ -140,7 +140,7 @@ body p {
 }
 */
 /* 電腦版：螢幕寬度大於 1366px */
-@media (min-width: 1366px) {
+@media (max-width: 1366px) {
   #oceanproductfoto {
     width: 100%; /* 圖片佔用螢幕的 80% */
     height: auto;
@@ -167,7 +167,7 @@ body p {
 }
 
 /* 平板：螢幕寬度 768px 至 1024px */
-@media ( min-width : 362px ) and (max-width : 768px ){
+@media (max-width : 768px ){
 /*
 	.row {
     flex-direction: column;  垂直排列 
